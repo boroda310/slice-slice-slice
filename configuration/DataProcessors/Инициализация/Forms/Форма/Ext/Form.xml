@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаИнициализация" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа инициализация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа инициализация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаИнициализацияРасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<Page name="Товары" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<InputField name="КоличествоТоваров" id="17">
+							<DataPath>КоличествоТоваров</DataPath>
+							<ContextMenu name="КоличествоТоваровКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="КоличествоТоваровРасширеннаяПодсказка" id="19"/>
+						</InputField>
+						<Button name="СоздатьТовары" id="1">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьТовары</CommandName>
+							<ExtendedTooltip name="СоздатьТоварыРасширеннаяПодсказка" id="2"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Цены" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цены</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЦеныРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<InputField name="Период" id="20">
+							<DataPath>Период</DataPath>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="22"/>
+						</InputField>
+						<Button name="ЗаполнитьЦеныНаНачалоПериода" id="5">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьЦеныНаНачалоПериода</CommandName>
+							<ExtendedTooltip name="ЗаполнитьЦеныНаНачалоПериодаРасширеннаяПодсказка" id="6"/>
+						</Button>
+						<InputField name="КоличествоПереоценок" id="45">
+							<DataPath>КоличествоПереоценок</DataPath>
+							<ContextMenu name="КоличествоПереоценокКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="КоличествоПереоценокРасширеннаяПодсказка" id="47"/>
+						</InputField>
+						<InputField name="КоличествоПозицийВПереоценкеМин" id="48">
+							<DataPath>КоличествоПозицийВПереоценкеМин</DataPath>
+							<ContextMenu name="КоличествоПозицийВПереоценкеМинКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="КоличествоПозицийВПереоценкеМинРасширеннаяПодсказка" id="50"/>
+						</InputField>
+						<InputField name="КоличествоПозицийВПереоценкеМакс" id="54">
+							<DataPath>КоличествоПозицийВПереоценкеМакс</DataPath>
+							<ContextMenu name="КоличествоПозицийВПереоценкеМаксКонтекстноеМеню" id="55"/>
+							<ExtendedTooltip name="КоличествоПозицийВПереоценкеМаксРасширеннаяПодсказка" id="56"/>
+						</InputField>
+						<Button name="Переоценки" id="7">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ЗаполнитьПереоценкиВПериоде</CommandName>
+							<ExtendedTooltip name="ПереоценкиРасширеннаяПодсказка" id="8"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Продажи" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продажи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продажи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПродажиРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<InputField name="КоличествоКонтрагентов" id="28">
+							<DataPath>КоличествоКонтрагентов</DataPath>
+							<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="30"/>
+						</InputField>
+						<Button name="СоздатьКонтрагентов" id="31">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьКонтрагентов</CommandName>
+							<ExtendedTooltip name="СоздатьКонтрагентовРасширеннаяПодсказка" id="32"/>
+						</Button>
+						<InputField name="ПериодПродаж" id="25">
+							<DataPath>Период</DataPath>
+							<ContextMenu name="ПериодПродажКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПериодПродажРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="КоличествоПродажВДеньМин" id="33">
+							<DataPath>КоличествоПродажВДеньМин</DataPath>
+							<ContextMenu name="КоличествоПродажВДеньМинКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="КоличествоПродажВДеньМинРасширеннаяПодсказка" id="35"/>
+						</InputField>
+						<InputField name="КоличествоПродажВДеньМакс" id="36">
+							<DataPath>КоличествоПродажВДеньМакс</DataPath>
+							<ContextMenu name="КоличествоПродажВДеньМаксКонтекстноеМеню" id="37"/>
+							<ExtendedTooltip name="КоличествоПродажВДеньМаксРасширеннаяПодсказка" id="38"/>
+						</InputField>
+						<InputField name="КоличествоПозицийВДокументеПродажиМин" id="42">
+							<DataPath>КоличествоПозицийВДокументеПродажиМин</DataPath>
+							<ContextMenu name="КоличествоПозицийВДокументеПродажиМинКонтекстноеМеню" id="43"/>
+							<ExtendedTooltip name="КоличествоПозицийВДокументеПродажиМинРасширеннаяПодсказка" id="44"/>
+						</InputField>
+						<InputField name="КоличествоПозицийВДокументеПродажиМакс" id="39">
+							<DataPath>КоличествоПозицийВДокументеПродажиМакс</DataPath>
+							<ContextMenu name="КоличествоПозицийВДокументеПродажиМаксКонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="КоличествоПозицийВДокументеПродажиМаксРасширеннаяПодсказка" id="41"/>
+						</InputField>
+						<Button name="СоздатьПродажи" id="3">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьПродажи</CommandName>
+							<ExtendedTooltip name="СоздатьПродажиРасширеннаяПодсказка" id="4"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="Очистка" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очистка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очистка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОчисткаРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<Button name="ОчиститьЦены" id="62">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьЦены</CommandName>
+							<ExtendedTooltip name="ОчиститьЦеныРасширеннаяПодсказка" id="63"/>
+						</Button>
+						<Button name="УдалитьПродажи" id="64">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьПродажи</CommandName>
+							<ExtendedTooltip name="УдалитьПродажиРасширеннаяПодсказка" id="65"/>
+						</Button>
+						<Button name="УдалитьКонтрагентов" id="66">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьКонтрагентов</CommandName>
+							<ExtendedTooltip name="УдалитьКонтрагентовРасширеннаяПодсказка" id="67"/>
+						</Button>
+						<Button name="УдалитьНоменклатуру" id="68">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.УдалитьНоменклатуру</CommandName>
+							<ExtendedTooltip name="УдалитьНоменклатуруРасширеннаяПодсказка" id="69"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Инициализация</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КоличествоТоваров" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоКонтрагентов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПродажВДеньМин" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество продаж в день (мин)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПродажВДеньМакс" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество продаж в день (макс)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПозицийВДокументеПродажиМин" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество позиций в документе продажи (мин.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПозицийВДокументеПродажиМакс" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество позиций в документе продажи (макс.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПереоценок" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество переоценок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПозицийВПереоценкеМин" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество позиций в переоценке (мин.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПозицийВПереоценкеМакс" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество позиций в переоценке (макс.)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьТовары" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать товары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьТовары</Action>
+		</Command>
+		<Command name="СоздатьПродажи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать продажи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать продажи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Продажи</Action>
+		</Command>
+		<Command name="ЗаполнитьЦеныНаНачалоПериода" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить цены на начало периода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить цены на начало периода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Цены</Action>
+		</Command>
+		<Command name="ЗаполнитьПереоценкиВПериоде" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить переоценки в периоде</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить переоценки в периоде</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Переоценки</Action>
+		</Command>
+		<Command name="СоздатьКонтрагентов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьКонтрагентов</Action>
+		</Command>
+		<Command name="УдалитьЦены" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить цены</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить цены</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьЦены</Action>
+		</Command>
+		<Command name="УдалитьПродажи" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить продажи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить продажи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьПродажи</Action>
+		</Command>
+		<Command name="УдалитьКонтрагентов" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьКонтрагентов</Action>
+		</Command>
+		<Command name="УдалитьНоменклатуру" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить номенклатуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьНоменклатуру</Action>
+		</Command>
+	</Commands>
+</Form>
